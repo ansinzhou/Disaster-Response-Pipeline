@@ -12,3 +12,18 @@
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+
+### Required libraries:
+ - nltk
+ - numpy
+ - pandas
+ - scikit-learn
+ - sqlalchemy
+ 
+### Motivation:
+  The project aims to analyze data from Figure Eight and build a model to provide classification for disaster messages.
+  
+  The project includes a flask web app where a disaster message can be entered , and will be classified into one or several emergency categories. The wb app also displays visualization of data.
+  
+### Acknowldegement:
+  I would like to thank Figure Eight for the data used in the project, and Udacity for the advice and review.
