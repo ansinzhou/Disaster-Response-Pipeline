@@ -48,7 +48,8 @@ def load_data(database_filepath):
 
 
 def tokenize(text):
-     """Tokenize text
+    
+    """Tokenize text
     Parameters
     ----------
     text : string
@@ -85,8 +86,8 @@ def build_model():
     ])
     
     parameters = {
-        'clf__estimator__min_samples_leaf': [1],
-        'clf__estimator__max_depth': [None]
+        'clf__estimator__min_samples_leaf': [2, 5, 10],
+        'clf__estimator__max_depth': [10, 50, None]
     }
     
     cv = GridSearchCV(pipeline, param_grid = parameters, n_jobs = -1, verbose = 10)
